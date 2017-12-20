@@ -17,13 +17,19 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // require("./routes/settings-api.js")(app);
 // require("./routes/user-api.js")(app);
 app.get("/", function(req, res) {
-  db.Masters.findAll({
+  db.Battings.findAll({
     where: {
-      nameFirst: "david",
-      nameLast: "ortiz"
+      teamID: "BOS",
+      yearID: 2016
     }
   }).then(function(data) {
-    res.send(data);
+    let bigHitters = [];
+    data.forEach(function(player) {
+      if (player.HR >= 30) {
+        bigHitters.push(player.playerID);
+      }
+    });
+    res.send(bigHitters);
   });
 });
 
