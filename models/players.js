@@ -6,59 +6,63 @@ module.exports = function(sequelize, DataTypes) {
     },
     playerName: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
+    },
+    team: {
+      type: DataTypes.STRING,
+      allowNull: true
     },
     onBase: {
       type: DataTypes.INTEGER,
-      allowNull: false
+      allowNull: true
     },
     speed: {
       type: DataTypes.INTEGER,
-      allowNull: false
+      allowNull: true
     },
     position: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
     cost: {
       type: DataTypes.INTEGER,
-      allowNull: false
+      allowNull: true
     },
     fielding: {
       type: DataTypes.INTEGER,
-      allowNull: false
+      allowNull: true
     },
     outGB: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
     outFB: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
     outSO: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
     walk: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
     single: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
     double: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
     triple: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
     homer: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     }
   });
   return Players;
