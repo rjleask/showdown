@@ -100,6 +100,10 @@ function getPlayerInfo() {
       {
         name: "homers",
         message: "homers?"
+      },
+      {
+        name: "pic",
+        message: "pic?"
       }
     ])
     .then(function(answers) {
@@ -119,7 +123,8 @@ function getPlayerInfo() {
         single: answers.single,
         double: answers.double,
         triple: answers.triples,
-        homer: answers.homer
+        homer: answers.homers,
+        pic: answers.pic
       });
     });
 }

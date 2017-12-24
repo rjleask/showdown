@@ -63,6 +63,10 @@ module.exports = function(sequelize, DataTypes) {
     homer: {
       type: DataTypes.STRING,
       allowNull: true
+    },
+    pic: {
+      type: DataTypes.STRING,
+      allowNull: true
     }
   });
   return Players;
