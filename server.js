@@ -18,20 +18,29 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // require("./routes/settings-api.js")(app);
 // require("./routes/user-api.js")(app);
 app.get("/", function(req, res) {
-  db.Pitchings.findAll({
-    where: {
-      teamID: "BOS",
-      yearID: 2016
+  // db.Pitchings.findAll({
+  //   where: {
+  //     teamID: "BOS",
+  //     yearID: 2016
+  //   }
+  // }).then(function(data) {
+  //   let bigPitchers = [];
+  //   data.forEach(function(player) {
+  //     if (player.G > 20) {
+  //       bigPitchers.push(player);
+  //     }
+  //   });
+  //   // getPitcherInfo();
+  //   res.render("index", { players: bigPitchers });
+  // });
+  let playerData = [];
+  db.Players.findAll({}).then(function(data) {
+    // console.log(data);
+    for (let i = 0; i < data.length; i++) {
+      playerData.push(data[i]);
     }
-  }).then(function(data) {
-    let bigPitchers = [];
-    data.forEach(function(player) {
-      if (player.G > 20) {
-        bigPitchers.push(player);
-      }
-    });
-    getPitcherInfo();
-    res.send(bigPitchers);
+    console.log(playerData);
+    // res.render("index", { playerData: playerData });
   });
 });
 function getPitcherInfo() {
