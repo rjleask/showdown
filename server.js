@@ -39,8 +39,8 @@ app.get("/", function(req, res) {
     for (let i = 0; i < data.length; i++) {
       playerData.push(data[i]);
     }
-    console.log(playerData);
-    // res.render("index", { playerData: playerData });
+    // console.log(playerData);
+    res.render("index", { playerData: playerData });
   });
 });
 function getPitcherInfo() {
