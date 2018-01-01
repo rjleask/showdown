@@ -17,6 +17,22 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // require("./routes/settings-api.js")(app);
 // require("./routes/user-api.js")(app);
+app.post("/", function(req, res) {
+  db.Masters.findAll({
+    where: {
+      nameFirst: req.body.first,
+      nameLast: req.body.last
+    }
+  }).then(function(data) {
+    db.Players.findAll({
+      where: {
+        playerID: data[0].playerID
+      }
+    }).then(function(playerInfo) {
+      res.send(playerInfo);
+    });
+  });
+});
 app.get("/", function(req, res) {
   // db.Pitchings.findAll({
   //   where: {
@@ -33,15 +49,16 @@ app.get("/", function(req, res) {
   //   // getPitcherInfo();
   //   res.render("index", { players: bigPitchers });
   // });
-  let playerData = [];
-  db.Players.findAll({}).then(function(data) {
-    // console.log(data);
-    for (let i = 0; i < data.length; i++) {
-      playerData.push(data[i]);
-    }
-    console.log(playerData);
-    res.render("index", { playerData: playerData });
-  });
+  // let playerData = [];
+  // db.Players.findAll({}).then(function(data) {
+  //   // console.log(data);
+  //   for (let i = 0; i < data.length; i++) {
+  //     playerData.push(data[i]);
+  //   }
+  //   // console.log(playerData);
+  //   res.render("index", { playerData: playerData });
+  // });
+  res.render("index");
 });
 function getPitcherInfo() {
   inquirer
