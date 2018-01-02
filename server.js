@@ -17,6 +17,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // require("./routes/settings-api.js")(app);
 // require("./routes/user-api.js")(app);
+app.get("/game", (req, res) => {
+  res.render("game");
+});
 app.post("/", function(req, res) {
   db.Masters.findAll({
     where: {
