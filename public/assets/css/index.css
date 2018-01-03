@@ -6,6 +6,14 @@ body{
 }
 .page-wrapper{
   width: 100%;
+  
+}
+.game-page-wrapper{
+  background-image: url(http://wallportal.com/uploads/posts/baseball-field-background/baseball_field_background_010.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  height: 100vh;
 }
 .search-bar{
   text-align: center;
@@ -16,33 +24,67 @@ body{
   border: 1px solid black;
 }
 .card-box{
-  width:200px;
+  width:150px;
   height: 200px;
-  background-image: url(http://metal.graphics/wp-content/uploads/2016/04/gold-background.jpg);
+  background-image: url(http://www.gifstop.com/images/borders/blueborder.gif);
+  /* background-image: url(http://metal.graphics/wp-content/uploads/2016/04/gold-background.jpg); */
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
   position: relative;
-  margin-left: 10px;
+  margin:10%;
+  border-radius:3%;
+  text-align: center;
 }
 .card-name{
-  position: absolute;
-  bottom:20%;
-  background: white;
+  display: inline-block;
+  margin: 0 auto;
+  background: rgb(0, 0, 0);
   text-align: center;
-  width:100%;
-  padding:1%;
-}
-.team-icon{
-  position: absolute;
-  bottom:20%;
-  width:10%;
-  background: blue;
-  border-radius: 10%;
-  padding:1%;
+  width: 87%;
+  padding: 1%;
+  margin-top: 4%;
+  font-size: 18px;
+  color: #85fbaa;
+  border: 1px solid;
 }
 .img-box{
-  width:100%;
-  height:150px;
-  object-fit: contain;
+  width: 100%;
+  height: 158px;
+  /* background-repeat: no-repeat;
+  background-size: 93% 100%;
+  background-position: center; */
+  /* background-image:url(http://assets.nydailynews.com/polopoly_fs/1.1273887.1361906595!/img/httpImage/image.jpg_gen/derivatives/article_750/mannyweb27s-1-web.jpg); */
+  /* background-image: url(http://www4.pictures.zimbio.com/gi/Mookie+Betts+Pittsburgh+Pirates+v+Boston+Red+1PqwQ4CktQyl.jpg) */
+}
+.img-box .img-responsive{
+  margin:0 auto;
+  width: 87%
+}
+img{
+  max-height:100%;
+}
+/* field */
+.base{
+  height:210px;
+  width:160px;
+  border: 1px solid red;
+}
+.flex-grid-1{
+  display: flex;
+  justify-content: center;
+}
+.flex-grid-3{
+  /* background-image: url(https://media.gettyimages.com/photos/baseball-field-at-a-major-league-baseball-game-picture-id94996850);
+  background-position: center;
+  background-repeat: no-repeat; */
+  /* background-size: 100% 100%; */
+  display: flex;
+  justify-content: space-between;
+}
+.top{
+  /* background-image: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/62GG3Vu/empty-stands-and-field-at-a-professional-baseball-stadium_naglzl8e6l__F0000.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%; */
 }

@@ -1,3 +1,20 @@
+// $(function() {
+//   var i = 0;
+//   var images = ["gold1.gif", "gold3.gif"];
+//   var image = $(".card-box");
+//   image.css("background-image", "url(/images/gold1.gif)");
+//   setInterval(function() {
+//     image.fadeOut(1000, function() {
+//       image.css("background-image", "url(/images/" + images[i] + ")");
+//       image.fadeIn(1000);
+//     });
+//     if (i == images.length - 1) {
+//       i = 0;
+//     } else {
+//       i++;
+//     }
+//   }, 3000);
+// });
 $(".search-bar").on("change", function(e) {
   e.preventDefault();
   let result = $(this)
