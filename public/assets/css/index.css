@@ -6,14 +6,22 @@ body{
 }
 .page-wrapper{
   width: 100%;
-  
 }
 .game-page-wrapper{
-  background-image: url(http://wallportal.com/uploads/posts/baseball-field-background/baseball_field_background_010.jpg);
+  background: black;
+  /* background-image: url(http://wallportal.com/uploads/posts/baseball-field-background/baseball_field_background_010.jpg); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
   height: 100vh;
+}
+.base-paths-wrapper{
+  /* background-image: url(https://www.turfandrec.com/media/k2/items/cache/3e96d38302447f1cf99d475dfb5c308d_XL.jpg); */
+  background-image: url(../images/ballpark.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  height:100vh;
 }
 .search-bar{
   text-align: center;
@@ -69,18 +77,16 @@ img{
   height:210px;
   width:160px;
   border: 1px solid red;
+  background: rgba(250,250,250,0.3);
 }
 .flex-grid-1{
   display: flex;
   justify-content: center;
 }
 .flex-grid-3{
-  /* background-image: url(https://media.gettyimages.com/photos/baseball-field-at-a-major-league-baseball-game-picture-id94996850);
-  background-position: center;
-  background-repeat: no-repeat; */
-  /* background-size: 100% 100%; */
   display: flex;
   justify-content: space-between;
+  margin:10px;
 }
 /* .top{
   /* background-image: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/62GG3Vu/empty-stands-and-field-at-a-professional-baseball-stadium_naglzl8e6l__F0000.png);
