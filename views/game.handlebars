@@ -1,4 +1,46 @@
 <div class="game-page-wrapper">
+  <button class="btn btn-default roster">Roster</button>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <button class="btn btn-default team1">Close</button>
+    <button class="btn btn-default bullpen">Sub/Pullpen</button>
+    <div class="container">
+      <section class="flex-grid-team">
+        <div class="lineup-1 b-order" placeholder="number1">
+          <div class="batting-number">1</div>
+          <div class="card-box">
+            <div class="card-name">Mookie Betts</div>
+          <div class="img-box">
+            <img class="img-responsive" src="http://www4.pictures.zimbio.com/gi/Mookie+Betts+Pittsburgh+Pirates+v+Boston+Red+1PqwQ4CktQyl.jpg">
+          </div>
+        </div>
+      </div>
+     <div class="lineup-2 b-order" placeholder="number 2">
+       <div class="batting-number">2</div>
+     </div>
+     <div class="lineup-3 b-order" placeholder="number 3">
+       <div class="batting-number">3</div>
+     </div>
+     <div class="lineup-4 b-order" placeholder="number 4">
+       <div class="batting-number">4</div>
+     </div>
+     <div class="lineup-5 b-order" placeholder="number 5">
+       <div class="batting-number">5</div>
+     </div>
+     <div class="lineup-6 b-order" placeholder="number 6">
+       <div class="batting-number">6</div>
+     </div>
+     <div class="lineup-7 b-order" placeholder="number 7">
+       <div class="batting-number">7</div>
+     </div>
+     <div class="lineup-8 b-order" placeholder="number 8">
+       <div class="batting-number">8</div>
+     </div>
+     <div class="lineup-9 b-order" placeholder="number 9">
+       <div class="batting-number">9</div>
+     </div>
+    </section>
+  </div>
+</nav>
   <div class="base-paths-wrapper">
   {{#each playerData}}
     <li>{{playerID}}</li>
@@ -9,20 +51,55 @@
   <section class="flex-grid-3">
     <div class="base third"></div>
     <div class="base mound"></div>
-    <div class="base first"></div>            
+    <div class="base first"></div>
   </section>
   <section class="flex-grid-1">
     <div class="base home"></div>
   </section>
-  {{!-- <div class="card-box">
-      <div class="card-name">Mookie Betts</div>
-    <div class="img-box">
-      <img class="img-responsive" src="http://www4.pictures.zimbio.com/gi/Mookie+Betts+Pittsburgh+Pirates+v+Boston+Red+1PqwQ4CktQyl.jpg">
-    </div>
-  </div> --}}
   </div>
+  {{!-- <button class="btn btn-default roster2">Roster</button>   --}}
+  <nav class="navbar navbar-default navbar-fixed-bottom nav-bot">
+    <button class="btn btn-default team2">Close this</button>
+    <button class="btn btn-default bullpen2">Sub/Pullpen</button>
+  <div class="container">
+    <section class="flex-grid-team">
+        <div class="lineup-1 b-order" placeholder="number1">
+          <div class="batting-number">1</div>
+          <div class="card-box">
+            <div class="card-name">Mookie Betts</div>
+          <div class="img-box">
+            <img class="img-responsive" src="http://www4.pictures.zimbio.com/gi/Mookie+Betts+Pittsburgh+Pirates+v+Boston+Red+1PqwQ4CktQyl.jpg">
+          </div>
+        </div>
+      </div>
+     <div class="lineup-2 b-order" placeholder="number 2">
+       <div class="batting-number">2</div>
+     </div>
+     <div class="lineup-3 b-order" placeholder="number 3">
+       <div class="batting-number">3</div>
+     </div>
+     <div class="lineup-4 b-order" placeholder="number 4">
+       <div class="batting-number">4</div>
+     </div>
+     <div class="lineup-5 b-order" placeholder="number 5">
+       <div class="batting-number">5</div>
+     </div>
+     <div class="lineup-6 b-order" placeholder="number 6">
+       <div class="batting-number">6</div>
+     </div>
+     <div class="lineup-7 b-order" placeholder="number 7">
+       <div class="batting-number">7</div>
+     </div>
+     <div class="lineup-8 b-order" placeholder="number 8">
+       <div class="batting-number">8</div>
+     </div>
+     <div class="lineup-9 b-order" placeholder="number 9">
+       <div class="batting-number">9</div>
+     </div>
+    </section>
+  </div>
+</nav>
 </div>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="/js/index.js">
-
+<script type="text/javascript" src="/js/game.js">
 </script>
